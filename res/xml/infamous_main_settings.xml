@@ -52,6 +52,12 @@
                 android:layout="@layout/infamous_quicksettings"
 	        android:icon="@drawable/ic_quicksettings" />
 
+    <!-- Screen Recorder -->
+        <PreferenceScreen
+                android:key="screen_recorder"
+                android:title="@string/screen_recorder_title"
+                android:fragment="com.android.settings.crdroid.ScreenRecorderSettings" />
+
     <!-- Status bar tweaks -->
         <PreferenceScreen
                 android:id="@+id/status_bar_settings"

@@ -330,6 +330,13 @@
                 android:taskAffinity="com.android.settings"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:parentActivityName="Settings">
+
+        <!-- Infamous Extra info -->
+        <activity android:name="com.android.settings.infamous.extrainfo.MainActivity"
+                  android:theme="@android:style/Theme.Material.Light.Dialog.NoActionBar.MinWidth">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
         </activity>
 
         <activity android:name="Settings$BluetoothSettingsActivity"

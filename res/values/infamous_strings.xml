@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The LiquidSmooth Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Infamous Extra Info -->
+    <string name="vextrainfo">Extra information</string>
+    <string name="vextrainfo_summary">Display extra info for cpu, display, etc</string>
+	
+    <!-- About phone screen, legal summary -->
+    <string name="device_legal_summary">Open source and Google licenses</string>
+	
+    <!-- Share Validus -->
+    <string name="share_infamous_title">Share Infamous</string>
+    <string name="share_infamous_summary">Let others know about Infamous</string>
+    <string name="share_message">Check out what #Infamous is all about @ http://infamousdevelopment.com/</string>
+    <string name="share_chooser_title">Share Infamous</string>
+		
+</resources>

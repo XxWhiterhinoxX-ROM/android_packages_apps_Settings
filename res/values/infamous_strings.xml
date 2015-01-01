@@ -97,6 +97,6 @@
     <string name="clock_font_normal">Normal</string>
     <string name="clock_font_condensed">Condensed</string>
     <string name="clock_font_light_italic">Light Italic</string>
-    <string name="clock_font_resurrection">Resurrection Font</string>
+    <string name="clock_font_infamous">Infamous Font</string>
 		
 </resources>

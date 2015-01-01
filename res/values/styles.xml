@@ -227,6 +227,7 @@
         <item name="android:paddingEnd">8dip</item>
         <item name="android:orientation">vertical</item>
         <item name="android:gravity">start</item>
+        <item name="android:textColor">@*android:color/primary_text_default_material_dark</item>
     </style>
 
     <style name="wifi_item_label">

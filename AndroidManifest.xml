@@ -2170,6 +2170,18 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/sim_settings" />
         </activity>
+        
+        <!-- Infamous Settings -->
+        <activity android:name="Settings$MainSettingsActivity"
+             android:label="@string/infamous_settings_title"
+             android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.infamous.MainSettings" />
+        </activity>
 
         <activity android:name=".Settings$LockScreenSettingsActivity"
                   android:label="@string/lockscreen_settings"
@@ -2180,6 +2192,9 @@
                        android:resource="@id/lockscreen_settings" />
         </activity>
 
+        <activity
+             android:name=".infamous.MainSettings" />
+             
         <provider
             android:name=".search.SettingsSearchIndexablesProvider"
             android:authorities="com.android.settings"

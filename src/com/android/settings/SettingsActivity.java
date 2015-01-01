@@ -114,6 +114,7 @@ import com.android.settings.sim.SimSettings;
 import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
 import com.android.settings.voice.VoiceInputSettings;
+import com.android.settings.infamous.MainSettings;
 import com.android.settings.vpn2.VpnSettings;
 import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.widget.SwitchBar;
@@ -247,6 +248,7 @@ public class SettingsActivity extends Activity
             R.id.print_settings,
             R.id.home_settings,
             R.id.status_bar_settings,
+            R.id.main_settings,
             R.id.dashboard,
             R.id.privacy_settings_cyanogenmod
     };
@@ -269,6 +271,7 @@ public class SettingsActivity extends Activity
             UserDictionaryList.class.getName(),
             UserDictionarySettings.class.getName(),
             HomeSettings.class.getName(),
+            MainSettings.class.getName(),
             DisplaySettings.class.getName(),
             DeviceInfoSettings.class.getName(),
             ManageApplications.class.getName(),

@@ -114,7 +114,6 @@
 
         <!-- Behind The Mask -->
         <dashboard-tile
-
                 android:id="@+id/main_settings"
                 android:title="@string/infamous_settings_title"
                 android:fragment="com.android.settings.infamous.MainSettings"

@@ -26,9 +26,30 @@
                 android:id="@+id/status_bar_settings"
                 android:title="@string/status_bar_title"
                 android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
-                android:icon="@drawable/ic_settings_statusbar"
-                />
+                android:icon="@drawable/ic_settings_statusbar" />
                 
 </PreferenceCategory>
+
+    <!-- Infamous Performance -->
+    <PreferenceScreen
+                android:id="@+id/performance_controls"
+                android:icon="@drawable/ic_infamous_performance"
+		android:title="Infamous Performance">
+                <intent
+			android:action="android.intent.action.MAIN"
+			android:targetPackage="com.infamous.performance"
+			android:targetClass="com.infamous.performance.activities.MainActivity" />
+    </PreferenceScreen>
+
+    <!-- SuperSU -->
+    <PreferenceScreen
+                android:id="@+id/supersu_settings"
+                android:icon="@drawable/ic_settings_supersu"
+                android:title="@string/supersu_title">
+                <intent
+                        android:action="android.intent.action.MAIN"
+                        android:targetPackage="eu.chainfire.supersu"
+                        android:targetClass="eu.chainfire.supersu.MainActivity" />
+        </PreferenceScreen>
 
 </PreferenceScreen>

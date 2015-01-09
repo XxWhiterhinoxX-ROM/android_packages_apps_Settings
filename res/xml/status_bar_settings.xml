@@ -19,54 +19,83 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/status_bar_title">
 
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="status_bar_brightness_control"
-        android:title="@string/status_bar_toggle_brightness"
-        android:summary="@string/status_bar_toggle_brightness_summary"
-        android:defaultValue="false" />
-
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="status_bar_notif_count"
-        android:title="@string/status_bar_notif_count_title"
-        android:summary="@string/status_bar_notif_count_summary"
-        android:defaultValue="false" />
-                
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="status_bar_show_weather"
-        android:title="@string/status_bar_show_weather_title"
-        android:summary="@string/status_bar_show_weather_summary"
-        android:defaultValue="true" />
-
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="status_bar_show_empty_sims"
-        android:defaultValue="true"
-        android:title="@string/status_bar_show_unused_sims_title"
-        android:summaryOn="@string/status_bar_show_unused_sims_title_summary_on"
-        android:summaryOff="@string/status_bar_show_unused_sims_title_summary_off" />                             
-        
-    <!-- Status bar tweaks -->
     <PreferenceCategory
-        android:title="@string/status_bar_style_title">
+        android:title="@string/status_bar_general_cat">
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="status_bar_brightness_control"
+            android:title="@string/status_bar_toggle_brightness"
+            android:summary="@string/status_bar_toggle_brightness_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="status_bar_quick_qs_pulldown"
+            android:title="@string/status_bar_quick_qs_pulldown_title"
+            android:summary="@string/status_bar_quick_qs_pulldown_summary"
+            android:defaultValue="true" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="status_bar_notif_count"
+            android:title="@string/status_bar_notif_count_title"
+            android:summary="@string/status_bar_notif_count_summary"
+            android:defaultValue="false" />
+                
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="status_bar_show_weather"
+            android:title="@string/status_bar_show_weather_title"
+            android:summary="@string/status_bar_show_weather_summary"
+            android:defaultValue="true" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="status_bar_show_empty_sims"
+            android:defaultValue="true"
+            android:title="@string/status_bar_show_unused_sims_title"
+            android:summaryOn="@string/status_bar_show_unused_sims_title_summary_on"
+            android:summaryOff="@string/status_bar_show_unused_sims_title_summary_off" />                             
+
+    </PreferenceCategory>
+
+    <!-- Battery -->
+    <PreferenceCategory
+         android:title="@string/status_bar_battery_cat">
+
+         <ListPreference
+            android:key="status_bar_battery_style"
+            android:title="@string/status_bar_battery_style_title"
+            android:dialogTitle="@string/status_bar_battery_style_title"
+            android:entries="@array/status_bar_battery_style_entries"
+            android:entryValues="@array/status_bar_battery_style_values" />
+
+        <ListPreference
+            android:key="status_bar_show_battery_percent"
+            android:title="@string/status_bar_battery_percentage_title"
+            android:dialogTitle="@string/status_bar_battery_percentage_dialog_title"
+            android:entries="@array/status_bar_battery_percentage_entries"
+            android:entryValues="@array/status_bar_battery_percentage_values" />
+
+    </PreferenceCategory>
+
+    <!-- Status bar clock -->
+    <PreferenceCategory
+        android:title="@string/status_bar_clock_cat">
 
         <PreferenceScreen
             android:fragment="com.android.settings.infamous.StatusBarClockStyle"
             android:key="clock_style_pref"
             android:title="@string/status_bar_clock" />
-            
-     <ListPreference
-        android:key="status_bar_battery_style"
-        android:title="@string/status_bar_battery_style_title"
-        android:dialogTitle="@string/status_bar_battery_style_title"
-        android:entries="@array/status_bar_battery_style_entries"
-        android:entryValues="@array/status_bar_battery_style_values" />
-
-    <ListPreference
-        android:key="status_bar_show_battery_percent"
-        android:title="@string/status_bar_battery_percentage_title"
-        android:dialogTitle="@string/status_bar_battery_percentage_title"
-        android:entries="@array/status_bar_battery_percentage_entries"
-        android:entryValues="@array/status_bar_battery_percentage_values" />
 
     </PreferenceCategory>
+
+    <!-- Network Traffic -->
+    <PreferenceCategory
+        android:title="Network Traffic">
+
+        <PreferenceScreen
+            android:key="network_traffic_state"
+	        android:fragment="com.android.settings.infamous.NetworkTraffic"
+	        android:title="@string/network_traffic_title" />
+
+    </PreferenceCategory>
+
 
 </PreferenceScreen>

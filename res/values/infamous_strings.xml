@@ -53,11 +53,19 @@
 
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="device_settings_title">Device</string>
-
-    <!-- Status bar -->
-    <string name="status_bar_title">Status Bar Mods</string>
-    <string name="status_bar_style_title">Style and Tweaks</string>
+    
+    <!-- Behind The Mask -->
+    <string name="infamous_settings_title">Behind The Mask</string>
     <string name="infamous_cat_title">Infamous Mods</string>
+    <string name="infamous_performance_cat_title">Infamous Performance</string>
+    <string name="infamous_tools_cat_title">Infamous Tools</string>
+    
+    <!-- Status bar -->
+    <string name="status_bar_title">Status Bar</string>
+    <string name="status_bar_general_cat">General Style and Tweaks</string>        
+    <string name="status_bar_clock_cat">Clock and Date Style and Tweaks</string>
+    <string name="status_bar_battery_cat">Battery Style and Tweaks</string>
+    
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Clock and date</string>
     <string name="status_bar_clock_title">Clock and date style</string>
@@ -98,7 +106,32 @@
     <string name="clock_font_condensed">Condensed</string>
     <string name="clock_font_light_italic">Light Italic</string>
     <string name="clock_font_infamous">Infamous Font</string>
-    <!-- Behind The Mask -->
-    <string name="infamous_settings_title">Behind The Mask</string>
+
+    <!-- Network traffic -->
+    <string name="traffic_category">Traffic Indicators</string>
+    <string name="network_traffic_title">Network traffic indicator</string>
+    <string name="show_network_traffic_state">Status bar traffic monitor</string>
+    <string name="show_network_traffic_unit">Display unit</string>
+    <string name="show_network_traffic_frequency">Update interval</string>
+    <string name="show_network_traffic_disable">Disabled</string>
+    <string name="show_network_traffic_up">Outgoing</string>
+    <string name="show_network_traffic_down">Incoming</string>
+    <string name="show_network_traffic_all">Outgoing and incoming</string>
+    <string name="show_network_traffic_bit">Bits per second</string>
+    <string name="show_network_traffic_byte">Bytes per second</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
+    <string name="network_traffic_autohide">Auto hide</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+    <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+    <string name="network_traffic_color_style">Color style</string>
+    <string name="network_traffic_color_reset">Reset color</string>
+    <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
+    <string name="ok">OK</string>
+
+    <!-- SuperSU -->
+    <string name="supersu_title">SuperSU</string>
 		
 </resources>

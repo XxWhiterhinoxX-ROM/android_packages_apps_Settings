@@ -48,8 +48,15 @@
                 <intent
 			android:action="android.intent.action.MAIN"
 			android:targetPackage="com.infamous.performance"
-			android:targetClass="com.infamous.performance.activities.MainActivity" />
+		android:targetClass="com.infamous.performance.activities.MainActivity" />
         </PreferenceScreen>
+
+    <!-- Performance -->
+        <PreferenceScreen
+               android:id="@+id/performance_settings"
+               android:title="@string/performance_settings_title"
+               android:fragment="com.android.settings.cyanogenmod.PerformanceSettings"
+               android:icon="@drawable/ic_settings_performance" />
 
     </PreferenceCategory>
 

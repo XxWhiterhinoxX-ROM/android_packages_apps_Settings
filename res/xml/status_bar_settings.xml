@@ -81,7 +81,8 @@
         <PreferenceScreen
             android:fragment="com.android.settings.infamous.StatusBarClockStyle"
             android:key="clock_style_pref"
-            android:title="@string/status_bar_clock" />
+            android:title="@string/status_bar_clock"
+	    android:summary="Clock position and color" />
 
     </PreferenceCategory>
 
@@ -92,7 +93,8 @@
         <PreferenceScreen
             android:key="network_traffic_state"
 	        android:fragment="com.android.settings.infamous.NetworkTraffic"
-	        android:title="@string/network_traffic_title" />
+	        android:title="@string/network_traffic_title"
+		android:summary="Show network traffic in statusbar" />
 
     </PreferenceCategory>
 

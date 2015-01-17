@@ -947,7 +947,8 @@
 
     <!-- Notification drawer -->
     <string name="notification_drawer_title">Notification drawer</string>
-
+    <string name="qs_title">Quick Settings</string>
+    <string name="qs_category_title">Quick Settings </string>
     <string name="quick_pulldown_title">Quick pulldown</string>
     <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
     <string name="quick_pulldown_summary_left">Left</string>
@@ -997,6 +998,7 @@
 
     <string name="qs_advanced_location_title">Advanced location settings</string>
     <string name="qs_advanced_location_summary">Enable advanced settings for location in Quick Settings</string>
+    <string name="qs_notifications_label">Notifications</string>
 
     <!-- Gesture Settings -->
     <!-- Settings main menu entry -->

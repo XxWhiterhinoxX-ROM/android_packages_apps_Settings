@@ -35,7 +35,7 @@ import com.android.settings.search.Indexable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NotificationDrawerSettings extends SettingsPreferenceFragment implements Indexable,
+public class QuickSettings extends SettingsPreferenceFragment implements Indexable,
         Preference.OnPreferenceChangeListener {
     private static final String QUICK_PULLDOWN = "quick_pulldown";
 
@@ -45,7 +45,7 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.notification_drawer_settings);
+        addPreferencesFromResource(R.xml.quicksettings);
 
         mQSTiles = findPreference("qs_order");
     }

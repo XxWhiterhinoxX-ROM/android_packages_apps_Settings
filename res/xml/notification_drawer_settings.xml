@@ -15,7 +15,10 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/notification_drawer_title">
+  android:title="@string/qs_title">
+  <!-- Quick Settings -->
+    <PreferenceCategory
+        android:title="@string/qs_category_title">
 
     <ListPreference
         android:key="quick_pulldown"
@@ -23,15 +26,6 @@
         android:entries="@array/quick_pulldown_entries"
         android:entryValues="@array/quick_pulldown_values"
         android:persistent="false" />
-
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="status_bar_show_weather"
-        android:title="@string/status_bar_show_weather_title"
-        android:summary="@string/status_bar_show_weather_summary"
-        android:defaultValue="true" />
-
-    <PreferenceCategory
-        android:title="@string/qs_category_title">
 
         <PreferenceScreen
             android:key="qs_order"
@@ -46,15 +40,22 @@
             android:defaultValue="true" />
 
         <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
-            android:key="qs_show_brightness_slider"
-            android:title="@string/qs_brightness_slider_title"
-            android:defaultValue="true"/>
-
-        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
             android:key="qs_location_advanced"
             android:title="@string/qs_advanced_location_title"
             android:summary="@string/qs_advanced_location_summary"
             android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- Brightness Slider -->
+    <PreferenceCategory
+        android:title="Brightness Slider">
+      
+        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+            android:key="qs_show_brightness_slider"
+            android:title="@string/qs_brightness_slider_title"
+            android:summary="@string/qs_brightness_slider_summary"
+            android:defaultValue="true"/>
 
     </PreferenceCategory>
 

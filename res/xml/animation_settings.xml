@@ -19,7 +19,7 @@
     android:title="Animations"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-  <!-- Infamous Mods -->
+  <!-- Listview animations -->
     <PreferenceCategory
         android:title="Listview Animations">
       
@@ -42,4 +42,16 @@
     
     </PreferenceCategory>
 
+  <!-- System animations -->
+    <PreferenceCategory
+        android:title="System Animations">
+      
+       <PreferenceScreen
+            android:key="infamous_animation"
+            android:title="@string/infamous_animation_title"
+            android:summary="@string/infamous_animation_summary"
+            android:fragment="com.android.settings.infamous.AnimationControls" />
+
+    </PreferenceCategory>
+       
 </PreferenceScreen>

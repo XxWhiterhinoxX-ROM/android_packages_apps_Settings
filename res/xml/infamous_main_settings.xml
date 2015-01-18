@@ -21,13 +21,20 @@
    <!-- Infamous Mods -->
     <PreferenceCategory
         android:title="@string/infamous_cat_title">
-        
+
+    <!-- Animations -->
+         <PreferenceScreen
+                android:id="@+id/animation_settings"
+                android:title="@string/animation_settings_title"
+                android:fragment="com.android.settings.infamous.AnimationSettings"
+                android:layout="@layout/infamous_animations"
+                android:icon="@drawable/ic_animations" />
     <!-- Buttons -->
         <PreferenceScreen
                 android:id="@+id/button_settings"
                 android:title="@string/button_pref_title"
                 android:fragment="com.android.settings.ButtonSettings"
-		android:layout="@layout/infamous_buttons"
+                android:layout="@layout/infamous_buttons"
                 android:icon="@drawable/ic_settings_infamous_buttons" />
 
     <!-- Density changer -->

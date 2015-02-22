@@ -24,11 +24,14 @@
   <PreferenceCategory
         android:key="infamous_lockscreen_security"
         android:title="Lockscreen Security" >
+
     <PreferenceScreen
                 android:id="@+id/lockscreen_settings"
                 android:title="Screen Lock Options"
                 android:fragment="com.android.settings.lockscreen.LockScreenSettings" />
 
+    </PreferenceCategory>
+    
     <!-- Lockscreen Settings -->    
     <PreferenceCategory
         android:key="lockscreen_category"

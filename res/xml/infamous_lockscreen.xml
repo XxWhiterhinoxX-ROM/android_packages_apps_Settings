@@ -20,21 +20,16 @@
         android:title="@string/infamous_lock_title"
         android:key="lock_screen">
 
-    <!-- Lockscreen Settings -->
-  
-      <PreferenceCategory
-        android:key="security_category"
-        android:title="@string/lock_settings_title">
+    <!-- Lock screen Security -->
+  <PreferenceCategory
+        android:key="infamous_lockscreen_security"
+        android:title="Lockscreen Security" >
+    <PreferenceScreen
+                android:id="@+id/lockscreen_settings"
+                android:title="Screen Lock Options"
+                android:fragment="com.android.settings.lockscreen.LockScreenSettings" />
 
-        <PreferenceScreen
-            android:key="unlock_set_or_change"
-            android:title="@string/unlock_set_unlock_launch_picker_title"
-            android:summary="@string/unlock_set_unlock_mode_off"
-            settings:keywords="@string/keywords_lockscreen"
-            android:persistent="false"/>
-
-    </PreferenceCategory>
-    
+    <!-- Lockscreen Settings -->    
     <PreferenceCategory
         android:key="lockscreen_category"
         android:title="@string/lockscreen_category" >

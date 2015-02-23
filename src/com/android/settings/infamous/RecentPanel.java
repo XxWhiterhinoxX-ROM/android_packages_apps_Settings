@@ -29,7 +29,7 @@ import android.provider.Settings;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
-import com.android.settings.util.Helpers;
+import com.android.settings.infamous.Helpers;
 
 public class RecentPanel extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {

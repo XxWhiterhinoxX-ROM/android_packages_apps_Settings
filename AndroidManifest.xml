@@ -330,6 +330,7 @@
                 android:taskAffinity="com.android.settings"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:parentActivityName="Settings">
+        </activity>
 
         <!-- Infamous Extra info -->
         <activity android:name="com.android.settings.infamous.extrainfo.MainActivity"
@@ -2175,6 +2176,9 @@
                 android:value="com.android.settings.infamous.MainSettings" />
         </activity>
 
+        <activity
+                android:name=".infamous.MainSettings" />
+	
         <activity android:name=".Settings$LockScreenSettingsActivity"
                   android:label="@string/lockscreen_settings"
                   android:taskAffinity="">
@@ -2184,9 +2188,6 @@
                        android:resource="@id/lockscreen_settings" />
         </activity>
 
-        <activity
-             android:name=".infamous.MainSettings" />
-             
         <provider
             android:name=".search.SettingsSearchIndexablesProvider"
             android:authorities="com.android.settings"
